@@ -1,30 +1,50 @@
-header, body, footer {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    margin: 0;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 500px;
+}
+
+header, footer {
+    background-color: #DBFF33;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    padding: 5px;
 }
 
 header {
-    background-color: #DBFF33;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header img {
-    width: 50%;
-}
-
-h1 {
-    font-size: 60px;
-}
-
-footer {
-    background-color: #DBFF33;
+    width: 10rem;
+    margin: 20px;
     border-radius: 20px;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
+    box-shadow: 0 0 20px rgb(190, 190, 190);
+}
+
+header h1 {
+    font-size: 3.8rem;
+    padding-right: 20px;
+    margin: 0;
+}
+
+main p {
+    font-style: italic;
+}
+
+.lessons {
+    border-top: solid rgb(240, 240, 240);
+    border-bottom: solid rgb(240, 240, 240);
+    padding: 20px 50px;
+    line-height: 2rem;
+}
+
+.lastupdated p{
+    color: rgb(85, 85, 85);
+    font-weight: bold;
 }
