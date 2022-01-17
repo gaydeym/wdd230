@@ -1,2 +1,2 @@
 let copyrightYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = copyrightYear;
+document.getElementById("currentYear").innerHTML = copyrightYear;
