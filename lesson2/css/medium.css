@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contrast {
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,22 @@
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    .boxes {
+        display: block;
+    }
+
+    .boxes h3 {
+        font-size: 1.2rem;
+    }
+
+    .proximity,
+    .contrast {
+        margin-top: 20px;
+    }
+}
