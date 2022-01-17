@@ -57,11 +57,15 @@ footer {
 }
 
 .boxes img {
-    /* max-width: 425px; */
     max-width: 100%;
     margin-top: 25px;
 }
 
 .pageTitle {
+    font-weight: bold;
+}
+
+.lastUpdated p {
+    color: rgb(85, 85, 85);
     font-weight: bold;
 }
