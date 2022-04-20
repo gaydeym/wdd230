@@ -26,10 +26,6 @@ header h1 {
     margin: 0;
 }
 
-main p {
-    font-style: italic;
-}
-
 .lessons {
     border-top: solid rgb(240, 240, 240);
     border-bottom: solid rgb(240, 240, 240);
