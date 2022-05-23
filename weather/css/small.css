@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1C6EA9;
     --secondary-color: #AAE8FF;
-    --accent-1-color: #E04173;
-    --accent-2-color: #8D8D8D;
+    --accent-1-color: #AA141A;
+    --accent-2-color: #606060;
 }
 
 * {
@@ -130,9 +130,9 @@ main {
     margin-bottom: 10px;
 }
 
-.weather-summary p {
+/* .weather-summary p {
     font-size: 20px;
-}
+} */
 
 h3 {
     font-size: 1.5em;
@@ -266,7 +266,6 @@ article p {
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 14px;
     font-weight: bold;
 }
 
