@@ -125,6 +125,15 @@ main {
     padding: 20px;
 }
 
+.weather-summary hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-summary p {
+    font-size: 18px;
+}
+
 h3 {
     font-size: 1.5em;
     line-height: 2;
@@ -257,6 +266,7 @@ article p {
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 .footer-bottom-section a {
