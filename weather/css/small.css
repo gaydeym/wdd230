@@ -131,7 +131,7 @@ main {
 }
 
 .weather-summary p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h3 {
@@ -266,10 +266,10 @@ article p {
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .footer-bottom-section a {
     color: white;
-    margin: 10px;
 }
