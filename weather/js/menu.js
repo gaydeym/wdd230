@@ -1,3 +1,4 @@
+//MENU
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerButton").classList.toggle("open");

@@ -1,3 +1,4 @@
+//DATE
 let currentDate = new Date();
 
 let weekday = currentDate.toLocaleDateString("en", {weekday: "long"});

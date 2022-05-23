@@ -1,4 +1,8 @@
 @media only screen and (min-width: 40rem) {
+    .banner-ad span {
+        display: inline-block;
+    }
+
     .logo {
         justify-content: left;
     }
@@ -14,7 +18,44 @@
         text-align: center;
     }
 
+    main {
+        margin: 0 auto;
+    }
+
+    .banner-box {
+        position: relative;
+    }
+    
+    .weather-summary {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    article {
+        display: block;
+    }
+
+    article img {
+        width: 170px;
+        float: right;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        top: 5px;
+    }
+
     .footer-upper-section {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-map {
+        order: 1;
+    }
+
+    .contact-info {
+        order: 2;
     }
 }
