@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiClimaApp | Preston, Idaho</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="description" content="The home site for the Chamber of Commerce for the city of Lomas de Zamora in Buenos Aires.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -18,7 +19,7 @@
     <header>
         <div class="banner-ad">Preston Pancakes in the Park! <span>9:00 a.m. Saturday at the city park pavilion.</span></div>
         <div class="logo">
-            <img src="images/miclimaapp-logo.png" alt="Mi Clima App Logo">
+            <img src="images/optimized_images/miclimaapp-logo.png" alt="Mi Clima App Logo">
             <div>
                 <div>Mi Clima App</div>
                 <div>Reliability? Always, here!</div>
@@ -39,15 +40,19 @@
     <main>
         <h1>Preston Idaho</h1>
         <div class="banner-box">
-            <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Hero image franklin original">
+            <picture>
+                <source media="(max-width:39.99rem)" srcset="images/optimized_images/wdd230_image_franklinSmall.webp">
+                <source media="(max-width:63.99rem)" srcset="images/optimized_images/wdd230_image_franklinMedium.webp">
+                <img src="images/optimized_images/wdd230_image_franklinLarge.webp" alt="Hero image (Preston - Idaho)">
+            </picture>
             <div class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
                 <p>Currently: <span>Sunny</span></p>
-                <p>Temperature: <span>50 °F</span></p>
-                <p>Wind Chill: <span>48 °F</span></p>
+                <p>Temperature: <span id="temperature">50</span> °F</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
                 <p>Humidity: <span>69%</span></p>
-                <p>Wind Speed: <span>5 mph</span></p>
+                <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
             </div>
         </div>
         <h3>Five Day Forecast</h3>
@@ -80,13 +85,13 @@
         </div>
         <article>
             <h3>Article Title</h3>
-            <img src="images/article-image.avif" alt="Beautiful park">
+            <img loading="lazy" src="images/optimized_images/article-image.webp" alt="Beautiful park">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia placeat nam quo sunt fugit asperiores quae aliquid vel architecto provident repudiandae neque ipsum ad, rem accusantium velit ullam, iure consequatur earum? Obcaecati aliquam animi minima voluptas error magnam quos laborum consequatur tempore asperiores doloribus, quod ullam deserunt cum aspernatur, libero excepturi. Aliquid accusantium autem ducimus non ut. Nisi aliquid exercitationem officiis eum enim! Inventore, corrupti. Temporibus laudantium mollitia animi facere facilis ratione necessitatibus cumque voluptatum! Deleniti blanditiis rem, quibusdam sequi, voluptate nihil voluptatem accusantium sed illo cumque eligendi animi error vero reprehenderit dicta minus architecto non laboriosam vitae distinctio doloribus sunt accusamus! Aliquid aut laudantium asperiores inventore, explicabo minima alias assumenda, esse quibusdam dolore repudiandae aperiam enim possimus laboriosam eaque a ipsa similique! Quia quasi explicabo, alias cupiditate ea sunt dolor laudantium fugiat cum a ad ducimus repellat rerum vero cumque tempore optio delectus dolores esse quod eum corrupti in sequi? Animi architecto porro doloribus optio similique consequatur fugiat non omnis quae hic distinctio placeat illo, dolorum repellat qui voluptate recusandae! Ullam tempora dolorem, excepturi qui sequi harum esse nesciunt aspernatur pariatur culpa non illum incidunt unde inventore deleniti dolore laborum nostrum tenetur. Consequatur ipsam, iure qui ipsa molestiae blanditiis repellat temporibus autem optio quae recusandae id, nihil labore a, perferendis illum est cupiditate amet. Illo, tempore voluptatibus. Iure praesentium sapiente placeat, ratione magni, quidem fuga, recusandae obcaecati dolorum eum aliquid temporibus exercitationem minus. Quasi animi ducimus cumque deserunt unde laboriosam tenetur, iure delectus rem eaque! Id, illum officiis nesciunt corrupti vero minus repudiandae? Quod iusto deleniti quis ipsa nulla aut vitae, voluptas quo expedita minus animi sit alias laboriosam nobis soluta hic consequatur commodi voluptatibus. Corrupti rem architecto repudiandae? Dolore excepturi corrupti quo natus id aliquid reprehenderit dicta modi? Necessitatibus facere magnam, dolores eligendi ratione aperiam quos incidunt.</p>
         </article>
     </main>
     <footer>
         <div class="footer-upper-section">
-            <iframe class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1651983043856!5m2!1ses!2sar"></iframe>
+            <iframe loading="lazy" class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1651983043856!5m2!1ses!2sar"></iframe>
             <div class="contact-info">
                 <h3>Contact Information</h3>
                 <div class="main-contact-info">
@@ -112,5 +117,6 @@
     <script src="js/currentYear.js"></script>
     <script src="js/lastModified.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
