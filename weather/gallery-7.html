@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiClimaApp | Preston, Idaho</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="description" content="The home site for the Chamber of Commerce for the city of Lomas de Zamora in Buenos Aires.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banner-ad">Preston Pancakes in the Park! <span>9:00 a.m. Saturday at the city park pavilion.</span></div>
+        <div class="logo">
+            <img src="images/optimized_images/miclimaapp-logo.png" alt="Mi Clima App Logo">
+            <div>
+                <div>Mi Clima App</div>
+                <div>Reliability? Always, here!</div>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburgerButton"><span>&equiv;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Weather Gallery</h1>
+        <div class="gallery-grid">
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-1.webp" alt="Snow falling on the city street">
+                <figcaption>Snow falling on the city street</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-2.webp" alt="Sunset with clouds in front of the lake">
+                <figcaption>Sunset with clouds in front of the lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-3.webp" alt="Partially cloudy sky">
+                <figcaption>Partially cloudy sky</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-4.webp" alt="Cloudy sky">
+                <figcaption>Cloudy sky</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-5.webp" alt="Foggy mountains">
+                <figcaption>Foggy mountains</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-6.webp" alt="City covered with fresh snow">
+                <figcaption>City covered with fresh snow</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-7.webp" alt="Sunny with some clouds">
+                <figcaption>Sunny with some clouds</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-8.webp" alt="Totally clear sky">
+                <figcaption>Totally clear sky</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery/placeholder.webp" data-src="images/gallery/image-9.webp" alt="Sky covered with clouds">
+                <figcaption>Sky covered with clouds</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-upper-section">
+            <iframe loading="lazy" class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1651983043856!5m2!1ses!2sar"></iframe>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="main-contact-info">
+                    <a href="https://goo.gl/maps/rrJyFnA8wRQtdeNGA" target="_blank"><img src="images/map.svg" alt="Map icon">2405 W Duroski St, Preston</a>
+                    <a href="https://wa.me/12088521315" target="_blank"><img src="images/phone.svg" alt="Phone icon">+1 208-852-1315</a>
+                    <a href="mailto:info@miclimaapp.com" target=_blank><img src="images/email.svg" alt="Email icon">info@miclimaapp.com</a>
+                </div>
+                <div class="secondary-contact-info">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook icon"></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+                    <a href="https://www.instagram.com/" target=_blank><img src="images/instagram.svg" alt="Instagram icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-section">
+            <div>
+                <p>&copy; <span id="currentYear"></span> | Miguel Gaydey | Buenos Aires | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            </div>
+            <span id="current-date"></span>
+        </div>
+    </footer>
+    <script src="js/banner-ad.js"></script>
+    <script src="js/currentYear.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="js/lazy-load.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

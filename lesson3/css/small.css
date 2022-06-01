@@ -1,9 +1,0 @@
-@media (max-width: 480px) {
-    .nav__links li {
-        padding: 5px 0px;
-    }
-
-    main div img {
-        height: 5rem;
-    }
-}

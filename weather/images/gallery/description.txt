@@ -1,0 +1,9 @@
+1: Snow falling on the city street
+2: Sunset with clouds in front of the lake
+3: Partially cloudy sky
+4: Cloudy sky
+5: Foggy mountains
+6: City covered with fresh snow
+7: Sunny with some clouds
+8: Totally clear sky
+9: Sky covered with clouds
