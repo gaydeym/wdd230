@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #1C6EA9;
-    --secondary-color: #AAE8FF;
+    --primary-color: #1c6ea9;
+    --secondary-color: #aae8ff;
     --accent-1-color: #990000;
     --accent-2-color: #606060;
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
 }
 
@@ -17,7 +17,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
 }
 
 .logo img {
@@ -105,14 +105,111 @@ nav ul li.active a {
     font-weight: bold;
 }
 
-#hamburgerButton span:nth-child(1) {display: block;}
-#hamburgerButton span:nth-child(2) {display: none;}
+#hamburgerButton span:nth-child(1) {
+    display: block;
+}
+#hamburgerButton span:nth-child(2) {
+    display: none;
+}
 
-#hamburgerButton.open span:nth-child(1) {display: none;}
-#hamburgerButton.open span:nth-child(2) {display: block;}
+#hamburgerButton.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerButton.open span:nth-child(2) {
+    display: block;
+}
 
 main {
     margin: 0 20px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent-1-color);
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select,
+form textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: 0.75rem;
+    color: var(--accent-2-color);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+}
+
+.slicer {
+    color: yellow;
+    background-color: red;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--accent-1-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: var(--accent-1-color) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.backBtn {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.backBtn a {
+    border: none;
+    text-decoration: none;
+    background-color: var(--accent-1-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bold;
 }
 
 .banner-box img {
@@ -167,8 +264,8 @@ h3 {
 .flex-col {
     flex: 1 1 auto;
     border-left: 1px solid black;
-	border-bottom: 1px solid black;
-	text-align: center;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 
 .flex-col:last-child {
@@ -176,12 +273,12 @@ h3 {
 }
 
 .col-head {
-	display: block;
-	padding: 5px;
-	text-align: center;
+    display: block;
+    padding: 5px;
+    text-align: center;
     font-weight: bold;
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
     font-size: 0.8rem;
 }
 
@@ -191,9 +288,9 @@ h3 {
 }
 
 .data {
-	display: block;
-	padding: 0 5px 5px;
-	text-align: center;
+    display: block;
+    padding: 0 5px 5px;
+    text-align: center;
 }
 
 article {

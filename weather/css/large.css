@@ -7,6 +7,10 @@
         padding: 15px 45px;
     }
 
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
