@@ -171,6 +171,9 @@ form label.sbs {
 
 form textarea {
     height: 100px;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 20rem;
 }
 
 form input.submitBtn {
