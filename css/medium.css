@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header img {
+        width: 10rem;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 3.8rem;
+    }
+}
