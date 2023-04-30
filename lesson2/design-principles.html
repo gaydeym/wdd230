@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Principles</title>
+    <meta name="description" content="Lesson 2 from WDD 230: Web Frontend Development I in which they show three pages examples with good design practices.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>Miguel Gaydey</h2>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="visualHierarchy">
+                <h3>Visual Hierarchy</h3>
+                <div>
+                    <p class="pageTitle">BBVA</p>
+                    <a href="https://www.bbva.com.ar/">https://www.bbva.com.ar/</a>
+                    <img src="images/BBVA.webp" alt="BBVA Screenshot homepage">
+                    <p>On this page, we can see the principle of visual hierarchy that refers to the arrangement of components in ascending or descending order of importance. A critical purpose of the visual hierarchy is to provide a focal point; this tells visitors where the most critical information is located. This is achieved using proportion, color, images, contrast, typography, white space, texture, and style. In this case, the page of this bank tells us where we have to click to request their services.</p>
+                </div>
+            </div>
+            <div class="proximity">
+                <h3>Proximity</h3>
+                <div>
+                    <p class="pageTitle">Amazon</p>
+                    <a href="https://www.amazon.com/-/es/">https://www.amazon.com/-/es/</a>
+                    <img src="images/Amazon.webp" alt="Amazon Screenshot homepage">
+                    <p>On this page we can see the principle of proximity that refers to design elements close to each other within a composition, we perceive those elements as related. By placing elements separate from each other, a designer can convey that there is no relationship between them. The relationship between the elements creates relevance, organization, structure, and hierarchy. As we see on the Amazon page, we see groups that give us the idea that they are elements that go together.</p>
+                </div>
+            </div>
+            <div class="contrast">
+                <h3>Contrast</h3>
+                <div>
+                    <p class="pageTitle">Dungeons Dragons</p>
+                    <a href="https://dnd.wizards.com/">https://dnd.wizards.com/</a>
+                    <img src="images/Dungeons_Dragons.webp" alt="DungeonsDragons Screenshot homepage">
+                    <p>On this page we can see the principle of contrast which refers to the design "pop", making it memorable for viewers. Contrast also helps in the usability of a composition. The organization of a design depends on how contrast is used to direct the viewer's gaze to what is most important. Through contrast, designers can highlight certain elements that they want to emphasize, creating a focal point for an audience and a visual hierarchy. As we see on the Dungeons Dragons page, they give us information, and immediately we have a button that takes us to execute the action generating quick interest in the page.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; <span id="currentYear"></span> | Miguel Gaydey | Buenos Aires, Argentina</p>
+        </div>
+        <div class="lastUpdated">
+            <p>Last Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/lastModified.js"></script>
+</body>
+</html>
