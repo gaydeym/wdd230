@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #1c6ea9;
+    --secondary-color: #aae8ff;
+    --accent-1-color: #990000;
+    --accent-2-color: #606060;
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    min-width: 500px;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px 0px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 70px;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: white;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: var(--secondary-color);
+}
+
+main {
+    margin: 0px 10%;
+    text-align: justify;
+}
+
+main div {
+    background-color: rgb(212, 212, 212);
+}
+
+main div img {
+    display: block;
+    height: 9rem;
+    padding: 20px;
+}
+
+.colors {
+    display: grid;
+    gap: 10px;
+}
+
+.primary,
+.secondary,
+.accent-1,
+.accent-2 {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.primary h3,
+.secondary h3,
+.accent-1 h3,
+.accent-2 h3 {
+    margin: 5px;
+    text-align: center;
+}
+
+.primary p,
+.secondary p,
+.accent-1 p,
+.accent-2 p {
+    color: white;
+    padding: 10px 5px;
+    margin: 0px;
+}
+
+.primary p {
+    background-color: var(--primary-color);
+}
+
+.secondary p { 
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.accent-1 p {
+    background-color: var(--accent-1-color);
+}
+
+.accent-2 p {
+    background-color: var(--accent-2-color);
+}
+
+footer {
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    background-color: var(--accent-1-color);
+}
+
+.copyright {
+    color: white;
+    margin-bottom: 0;
+}
+
+.lastUpdated p {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+}

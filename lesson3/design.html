@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Lomas de Zamora Chamber</title>
+    <meta name="description" content="Lesson 3 from WDD 230: Web Frontend Development I in which they show a site plan of a chamber commerce of Lomas de Zamora.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/lomas-de-zamora-logo.png" alt="Lomas de Zamora Chamber Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Purpose</a></li>
+                <li><a href="target-audience.html">Audience</a></li>
+                <li class="active"><a href="design.html">Design</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Color Scheme</h2>
+        <p>The primary color will be used on features such as the navbar, footer, and buttons as well as the logo.</p>
+        <p>Secondary color will be used for some text, bottons, and design features.</p>
+        <p>Accents will be used for design features. Most text will be in black.</p>
+        <section class="colors">
+            <div class="primary">
+                <h3>Primary:</h3>
+                <p>#1C6EA9</p>
+            </div>
+            <div class="secondary">
+                <h3>Secondary:</h3>
+                <p>#AAE8FF</p>
+            </div>
+            <div class="accent-1">
+                <h3>Accent 1:</h3>
+                <p>#E04173</p>
+            </div>
+            <div class="accent-2">
+                <h3>Accent 2:</h3>
+                <p>#8D8D8D</p>
+            </div>
+        </section>
+        <h2>Typography</h2>
+        <h3>DM Sans</h3>
+        <p>DM Sans is a sans serif that looks good in all sizes and thicknesses. This font will be used for paragraphs, buttons, and the navbar.</p>
+        <h3>Ubuntu</h3>
+        <p>This font will be used for headings.</p>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Miguel Gaydey | Buenos Aires, Argentina</p>
+        </div>
+        <div class="lastUpdated">
+            <p>Last Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/lastModified.js"></script>
+</body>
+</html>
