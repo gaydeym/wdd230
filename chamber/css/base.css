@@ -152,6 +152,7 @@ nav ul li.active a {
 }
 
 .call-to-action {
+    z-index: 1;
     grid-column: 1/2;
     grid-row: 1/2;
     background-image: url("../images/banner.jpg");
