@@ -126,10 +126,13 @@ nav ul li.active a {
 
 .event, .call-to-action, .spotlight, .weather, .join, .news {
     background-color: rgb(242, 242, 242);
-    padding: 0 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.event, .spotlight, .weather, .join, .news {
+    padding: 0 10px 10px 10px;
 }
 
 .event {
@@ -152,25 +155,34 @@ nav ul li.active a {
 }
 
 .call-to-action {
+    position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url("../images/banner.jpg");
+    /* background-image: url("../images/banner.webp");
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    /* height: 300px; */
+}
+
+.bg * {
+    width: 100%;
 }
 
 .call-to-action h1 {
+    position: absolute;
+    top: 25%;
     color: white;
     font-size: 2.2rem;
     text-shadow: 0.2rem 0.2rem 0.1rem black;
 }
 
 .join-button {
+    position: absolute;
+    top: 50%;
     cursor: pointer;
     color: white;
     padding: 1.2rem;
@@ -224,13 +236,8 @@ nav ul li.active a {
     margin: auto;
 }
 
-#temperature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+.weather-info h3 {
     font-size: 3rem;
-    margin: 0;
 }
 
 #weather-condition {

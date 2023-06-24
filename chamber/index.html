@@ -19,7 +19,7 @@
     <div class="ad">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
         <div class="primary-header">
-            <img class="logo" src="images/lomas-de-zamora-logo.png" alt="Lomas de Zamora Chamber Logo">
+            <img class="logo" src="images/lomas-de-zamora-logo.webp" alt="Lomas de Zamora Chamber Logo">
             <button id="hamburger-button"><span>&equiv;</span><span>X</span></button>
             <nav>
                 <ul id="primary-nav">
@@ -48,25 +48,33 @@
                 <div class="read-button">More Info</div>
             </div>
             <div class="call-to-action">
+                <picture class="bg">
+                    <img src="images/bg.webp" alt="People communicating"
+                        srcset="images/bg_small.webp 720w,
+                                images/bg_medium.webp 1024w,
+                                images/bg_large.webp 1280w,
+                                " 
+                    >
+                </picture>
                 <h1>Welcome to Lomas de Zamora</h1>
                 <div class="join-button">Join the Chamber</div>
             </div>
             <div class="spotlight">
                 <div class="spotlight-1">
                     <h2>Commercial Advisors</h2>
-                    <img src="images/advisors-icon.png" alt="Commercial Advisors Icon">
+                    <img src="images/advisors-icon.webp" alt="Commercial Advisors Icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
                     <div class="read-button">More info</div>
                 </div>
                 <div class="spotlight-2">
                     <h2>All About Taxes</h2>
-                    <img src="images/taxes-icon.png" alt="Taxes Icon">
+                    <img src="images/taxes-icon.webp" alt="Taxes Icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
                     <div class="read-button">More info</div>
                 </div>
                 <div class="spotlight-3">
                     <h2>Big Organizations Here</h2>
-                    <img src="images/organizations-icon.png" alt="Organizations Icon">
+                    <img src="images/organizations-icon.webp" alt="Organizations Icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
                     <div class="read-button">More info</div>
                 </div>
@@ -74,12 +82,12 @@
             <div class="weather">
                 <h2>Weather</h2>
                 <div class="weather-info">
-                    <img src="images/weather-icon.png" alt="Weather icon">
-                    <h3 id="temperature">33°C</h3>
+                    <img src="images/weather-icon.webp" alt="Weather icon">
+                    <h3><span id="temperature">33</span>°C</h3>
                     <h4 id="weather-condition">Partially Cloudy</h4>
                     <div class="more-weather-info">
-                        <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
-                        <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                        <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+                        <p>Wind Chill: <span id="wind-chill"></span>°C</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +108,7 @@
         <div class="info">
             <div class="part-1">
                 <div class="footer-logo">
-                    <img src="images/lomas-de-zamora-logo-icon-only.png" alt="Lomas de Zamora Chamber Logo">
+                    <img src="images/lomas-de-zamora-logo-icon-only.webp" alt="Lomas de Zamora Chamber Logo">
                 </div>
                 <div>
                     <h3>LDZ Chamber of Commerce</h3>
@@ -121,5 +129,6 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
