@@ -21,6 +21,15 @@
         font-size: 1.2rem;
     }
 
+    .photo-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .photo-gallery img:hover {
+        transform: scale(1.01);
+        transition: transform 0.5s ease;
+    }
+
     .main {
         grid-template-columns: repeat(2, 1fr);
     }

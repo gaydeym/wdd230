@@ -118,10 +118,66 @@ nav ul li.active a {
     color: white;
 }
 
+main {
+    margin: 0 20px;
+}
+
+.demographic-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.demographic-data figure {
+    grid-column: 1/2;
+}
+
+.demographic-data img {
+    width: 100%;
+}
+
+.demographic-table {
+    grid-column: 2/3;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    max-height: 50%;
+}
+
+.demographic-table th, td  {
+    text-align: left;
+    border-bottom: 1px solid var(--accent-2-color);
+    padding: 0.6rem 0;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    box-shadow: 1px 1px 5px var(--accent-2-color);
+    filter: blur(0em);
+    transition: filter 0.5s;
+    height: 100%
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.visits {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
 .main {
     display: grid;
     gap: 10px;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .event, .call-to-action, .spotlight, .weather, .join, .news {

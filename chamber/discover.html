@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lomas de Zamora Chamber</title>
+    <meta name="description" content="The home site for the Chamber of Commerce for the city of Lomas de Zamora in Buenos Aires.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ad">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <header>
+        <div class="primary-header">
+            <img class="logo" src="images/lomas-de-zamora-logo.webp" alt="Lomas de Zamora Chamber Logo">
+            <button id="hamburger-button"><span>&equiv;</span><span>X</span></button>
+            <nav>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook-icon" src="images/facebook.svg" alt="Facebook icon"></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><img class="linkedin-icon" src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            </div>
+        </div>
+        <div class="secondary-header">
+            <div id="currentDate"></div>
+        </div>
+    </header>
+    <main>
+        <h1>Discover</h1>
+        <div class="demographic-data">
+            <h2>Campinas Demography</h2>
+            <figure>
+                <img src="https://dummyimage.com/435x370/606060/ffffff&text=Placeholder" data-src="images/ldz-map.webp" alt="Lomas de Zamora map">
+                <figcaption>Lomas de Zamora Map</figcaption>
+            </figure>
+            <table class="demographic-table">
+                <tr>
+                    <th>Mayor</th>
+                    <td>Martín Insaurralde</td>
+                </tr>
+                <tr>
+                    <th>Area</th>
+                    <td>87.3 km²</td>
+                </tr>
+                <tr>
+                    <th>Population</th>
+                    <td>650,678</td>
+                </tr>
+                <tr>
+                    <th>Demographic Density</th>
+                    <td>7,453 hab/km²</td>
+                </tr>
+            </table>
+        </div>
+        <h2>Photo Gallery</h2>
+        <div class="photo-gallery">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-1.webp" alt="Complex of modern buildings">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-2.webp" alt="City riverfront buildings">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-3.webp" alt="Food court">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-4.webp" alt="City ​​park">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-5.webp" alt="Central area with tall buildings">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-6.webp" alt="The most important university in Lomas de Zamora">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-7.webp" alt="Astrological museum of great importance">
+            <img src="https://dummyimage.com/480x320/606060/ffffff&text=Placeholder" data-src="images/image-8.webp" alt="Central square of Buenos Aires">
+        </div>
+        <div class="visits">Days since the last visit: <span id="visits"></span></div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="part-1">
+                <div class="footer-logo">
+                    <img src="images/lomas-de-zamora-logo-icon-only.webp" alt="Lomas de Zamora Chamber Logo">
+                </div>
+                <div>
+                    <h3>LDZ Chamber of Commerce</h3>
+                    <p>Manuel Castro 220</p>
+                    <p>Lomas de Zamora, Buenos Aires</p>
+                </div>
+            </div>
+            <div class="part-2">
+                <div>
+                    <p>info@ldz.org</p>
+                    <p>0800-122-5662</p>
+                    <p><a href="https://www.google.com/maps/place/Municipalidad+de+Lomas+de+Zamora/@-34.7574629,-58.4035907,15z/data=!4m2!3m1!1s0x0:0xd751d0252c13ead6?sa=X&ved=2ahUKEwje6PHC6Y_2AhUvK7kGHWSGBNEQ_BJ6BAg1EAU" target="_blank">📍Location Map</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Miguel Gaydey | WDD 230 Proyect | Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
