@@ -156,12 +156,20 @@ main {
     padding-bottom: 20px;
 }
 
+.photo-gallery figure {
+    margin: 0;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 5px var(--accent-2-color);
+}
+
+.photo-gallery figure figcaption {
+    padding: 10px;
+}
+
 .photo-gallery img {
     width: 100%;
-    box-shadow: 1px 1px 5px var(--accent-2-color);
     filter: blur(0em);
     transition: filter 0.5s;
-    height: 100%
 }
 
 img[data-src] {
