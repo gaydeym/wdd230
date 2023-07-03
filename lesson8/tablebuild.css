@@ -1,0 +1,46 @@
+:root {
+    --black: black;
+    --white: white;
+    --gray: rgb(50, 50, 50);
+    --border: rgb(230, 230, 230);
+    --zebra: rgb(240, 240, 240);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: thin solid var(--border);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .75rem;
+}
+
+tr th, td{
+    padding: 8px 20px;
+}
+
+thead tr {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+thead th[scope="col"] {
+    background-color: var(--gray);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+td {
+	text-align: center;
+    border: thin solid var(--border);
+}
