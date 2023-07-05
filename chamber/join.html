@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lomas de Zamora Chamber</title>
+    <meta name="description" content="The home site for the Chamber of Commerce for the city of Lomas de Zamora in Buenos Aires.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ad">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <header>
+        <div class="primary-header">
+            <img class="logo" src="images/lomas-de-zamora-logo.webp" alt="Lomas de Zamora Chamber Logo">
+            <button id="hamburger-button"><span>&equiv;</span><span>X</span></button>
+            <nav>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li class="active"><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook-icon" src="images/facebook.svg" alt="Facebook icon"></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><img class="linkedin-icon" src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            </div>
+        </div>
+        <div class="secondary-header">
+            <div id="currentDate"></div>
+        </div>
+    </header>
+    <main>
+        <h1>Join the Chamber of Commerce and get benefits for your organization!</h1>
+        <div class="join-page">
+            <div>
+                <h2>Fill in this form to join us</h2>
+                <form class="join-form" method="get" action="thankyou.htm">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>First Name<input type="text" name="fname" required></label>
+                        <label>Last Name<input type="text" name="lname" required></label>
+                        <label>Business Position<input type="text" name="position"></label>
+                        <label>Email<input type="email" name="email" placeholder="example@email.com" required></label>
+                        <label>Phone<input type="tel" name="tel" required></label>
+                        <label>Business Name<input type="text" name="business" placeholder="Alpha chars, hyphens, spaces, min. 7 chars" pattern="[A-Za-z\- ]{7,}" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" name="membership" value="np"> Non-profit Membership</label>
+                        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Description</legend>
+                        <label>Opcional Description<textarea name="businessDescription" spellcheck="false"></textarea></label>
+                    </fieldset>
+                    <label id="timeStamp"></label>
+                    <input class="submitBtn" type="submit" value="Become a Member">
+                </form>
+            </div>
+            <div>
+                <h2>Membership Benefits</h2>
+                <table class="benefits-table">
+                    <thead>
+                        <tr>
+                            <th colspan="5">Membership Levels</th>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>N/P</th>
+                            <th>Bronze</th>
+                            <th>Silver</th>
+                            <th>Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Networking</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Newsletters</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Trainings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Chamber Events</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Directory Listing</th>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Discounts</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Webinars</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th>Conferences</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>   
+                        <tr>
+                            <th>Mentors</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>      
+                        <tr>
+                            <th>Website Ad</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr> 
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Membership Fee</th>
+                            <td>Free</td> 
+                            <td>$5,990</td>
+                            <td>$7,990</td>
+                            <td>$9,900</td>
+                        </tr>
+                    </tfoot>            
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="part-1">
+                <div class="footer-logo">
+                    <img src="images/lomas-de-zamora-logo-icon-only.webp" alt="Lomas de Zamora Chamber Logo">
+                </div>
+                <div>
+                    <h3>LDZ Chamber of Commerce</h3>
+                    <p>Manuel Castro 220</p>
+                    <p>Lomas de Zamora, Buenos Aires</p>
+                </div>
+            </div>
+            <div class="part-2">
+                <div>
+                    <p>info@ldz.org</p>
+                    <p>0800-122-5662</p>
+                    <p><a href="https://www.google.com/maps/place/Municipalidad+de+Lomas+de+Zamora/@-34.7574629,-58.4035907,15z/data=!4m2!3m1!1s0x0:0xd751d0252c13ead6?sa=X&ved=2ahUKEwje6PHC6Y_2AhUvK7kGHWSGBNEQ_BJ6BAg1EAU" target="_blank">📍Location Map</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Miguel Gaydey | WDD 230 Proyect | Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/timeStamp.js"></script>
+</body>
+</html>

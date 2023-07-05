@@ -4,6 +4,10 @@
         font-size: 1.4rem;
     }
 
+    .join-page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .main {
         grid-template-columns: repeat(5, 1fr);
     }
