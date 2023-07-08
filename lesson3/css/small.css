@@ -72,16 +72,16 @@ nav li a:hover {
 main {
     margin: 0px 10%;
     text-align: justify;
-}
-
-main div {
-    background-color: rgb(212, 212, 212);
-}
+}   
 
 main div img {
     display: block;
     height: 9rem;
     padding: 20px;
+}
+
+.logos {
+    background-color: rgb(200, 200, 200);
 }
 
 .colors {
@@ -129,6 +129,12 @@ main div img {
 
 .accent-2 p {
     background-color: var(--accent-2-color);
+}
+
+.wireframes img {
+    width: 100%;
+    height: auto;
+    padding: 0;
 }
 
 footer {

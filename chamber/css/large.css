@@ -4,6 +4,17 @@
         font-size: 1.4rem;
     }
 
+    /* ---------- Directory Page ---------- */
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+    }
+
+    /* ---------- Join Page ---------- */
     .join-page {
         grid-template-columns: repeat(2, 1fr);
     }
