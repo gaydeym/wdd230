@@ -1,29 +1,39 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 900px;
-}
-
 header, footer {
     background-color: #F2E8CF;
-    border-radius: 20px;
     justify-items: center;
     align-items: center;
     display: grid;
     padding: 5px;
 }
 
+header {
+    border-radius: 0 0 10px 10px;
+}
+
+footer {
+    border-radius: 10px 10px 0 0;
+}
+
 header img {
     width: 8rem;
     margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgb(190, 190, 190);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     font-size: 2.5rem;
     margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+main {
+    margin: 0 2%;
 }
 
 .lessons {
