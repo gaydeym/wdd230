@@ -223,33 +223,33 @@ img[data-src] {
 }
 
 /* ---------- Join Form ---------- */
-form {
+.join-form {
     margin: 0 auto;
     margin-bottom: 60px;
     text-align: left;
     width: 86vh;
 }
 
-fieldset {
+.join-form fieldset {
     border: none;
     padding: 0;
     margin-bottom: 30px;
 }
 
-legend {
+.join-form legend {
     font-weight: bold;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
 
-label {
+.join-form label {
     display: block;
     margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"] {
     box-sizing: border-box;
     width: 100%;
     padding: 22px 10px;
@@ -261,11 +261,11 @@ input[type="tel"] {
     background-color: rgba(249, 249, 249, 0.9);
 }
 
-input[type="radio"] {
+.join-form input[type="radio"] {
     margin-right: 5px;
 }
 
-textarea {
+.join-form textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 22px 10px;
@@ -294,11 +294,11 @@ textarea {
     color: var(--accent-1-color);
 }
 
-form label input:required {
+.join-form label input:required {
     border-left: var(--accent-1-color) solid 6px;
 }
 
-form label input:required:valid {
+.join-form label input:required:valid {
     border-left: rgb(0, 90, 0) solid 6px;
 }
 
@@ -530,6 +530,87 @@ form label input:required:valid {
 
 .news p {
     font-size: 1.15rem;
+}
+
+/* ---------- Contact Page ---------- */
+.body {
+    background-image: url("../images/bg.webp");
+    background-position: right;
+    background-size: cover;
+}
+
+.contact {
+    display: block;
+    padding-bottom: 4%;
+}
+
+.contactL {
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0;
+}
+
+.contactR {
+    margin: 0;
+}
+
+.contactR img {
+    width: 32px;
+    padding: 10px;
+}
+
+.contact-form {
+    padding: 0 50px;
+}
+
+.contact-form h2{
+    padding-top: 50px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid var(--accent-2-color);
+}
+
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 10px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 150px;
+    border: none;
+    border-bottom: 1px solid var(--accent-2-color);
+}
+
+.sendBtn {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.contact iframe {
+    width: 100%;
+    border: none;
 }
 
 /* ---------- Footer ---------- */
