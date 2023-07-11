@@ -398,11 +398,12 @@ img[data-src] {
     text-align: center;
 }
 
-.event .read-button {
-    margin-top: 16px;
+.event .blue-button {
+    margin-bottom: 10px;
 }
 
-.read-button {
+.blue-button {
+    display: block;
     margin: 0 auto;
     background-color: var(--primary-color);
     color: white;
@@ -411,6 +412,8 @@ img[data-src] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
+    width: 14rem;
 }
 
 .call-to-action {
@@ -443,7 +446,7 @@ img[data-src] {
 
 .spotlight {
     grid-column: 1/2;
-    grid-row: 4/6;
+    grid-row: 5/6;
     display: grid;
     gap: 10px;
     padding-top: 10px;
@@ -474,7 +477,7 @@ img[data-src] {
 /* ---------- Weather Widget ---------- */
 .weather {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     text-align: center;
 }
 
@@ -524,7 +527,7 @@ img[data-src] {
 
 .news {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 4/5;
     text-align: center;
 }
 

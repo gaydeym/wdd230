@@ -1,4 +1,4 @@
-const url =
+const api =
     "https://api.openweathermap.org/data/2.5/weather?lat=-34.7609&lon=-58.4063&units=imperial&appid=bf5292bf7f04806d4f8e644e2e480fbf";
 
 // select HTML elements in the document
@@ -9,7 +9,7 @@ const windSpeed = document.querySelector("#wind-speed");
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(api);
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
