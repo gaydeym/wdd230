@@ -22,7 +22,7 @@ async function apiFetch() {
 }
 
 function displayResults(weatherData) {
-    currentTemp.innerHTML = weatherData.main.temp.toFixed(0);
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°F`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
