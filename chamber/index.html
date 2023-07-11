@@ -25,7 +25,7 @@
                 <ul id="primary-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -50,39 +50,40 @@
             </div>
             <div class="call-to-action">
                 <h1>Welcome to Lomas de Zamora</h1>
-                <div class="join-button">Join the Chamber</div>
+                <a class="join-button" href="join.html">Join Now!</a>
             </div>
             <div class="spotlight">
                 <div class="spotlight-1">
                     <h2>Commercial Advisors</h2>
                     <img src="images/advisors-icon.webp" alt="Commercial Advisors Icon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
+                    <p>Get expert guidance who will help you make strategic decisions and drive business growth</p>
                     <div class="read-button">More info</div>
                 </div>
                 <div class="spotlight-2">
                     <h2>All About Taxes</h2>
                     <img src="images/taxes-icon.webp" alt="Taxes Icon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
+                    <p>Discover how to optimize your tax obligations and maximize benefits</p>
                     <div class="read-button">More info</div>
                 </div>
                 <div class="spotlight-3">
-                    <h2>Big Organizations Here</h2>
+                    <h2>Big Organizations</h2>
                     <img src="images/organizations-icon.webp" alt="Organizations Icon">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad atque omnis delectus libero in ut dolores, ea autem vel possimus qui placeat nesciunt corrupti numquam tempora, illum modi odio?</p>
+                    <p>Join a community of successful organizations making a significant impact in their industries</p>
                     <div class="read-button">More info</div>
                 </div>
             </div>
             <div class="weather">
                 <h2>Weather</h2>
                 <div class="weather-info">
-                    <img src="images/weather-icon.webp" alt="Weather icon">
-                    <h3><span id="temperature">33</span>°C</h3>
-                    <h4 id="weather-condition">Partially Cloudy</h4>
+                    <img id="weather-icon" src="" alt="">
+                    <h3><span id="current-temp"></span>°F</h3>
+                    <h4 id="weather-condition"></h4>
                     <div class="more-weather-info">
-                        <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
-                        <p>Wind Chill: <span id="wind-chill"></span>°C</p>
+                        <p>Wind Speed: <span id="wind-speed"></span></p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
                     </div>
                 </div>
+                <span class="source">Source: <a href="https://openweathermap.org/city/3431271">OpenWeatherMap</a></span>
             </div>
             <div class="join">
                 <h2>Join Now!</h2>
@@ -91,9 +92,7 @@
             </div>
             <div class="news">
                 <h2>News release</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sint quod necessitatibus tenetur aperiam hic eveniet, consequatur magni, voluptates minus quas, maxime eligendi quam illo alias sapiente veritatis magnam. Ratione.
-                Magni labore eaque doloremque iste eum ipsum, quasi commodi aliquam earum accusantium perspiciatis quam consectetur laboriosam adipisci optio id eius cupiditate iure quidem voluptate. Quam hic eaque tempora illo odio!
-                Temporibus quo odio facere. Sed deserunt ad fugit beatae nostrum exercitationem incidunt voluptates sapiente earum et mollitia, quis odio voluptatum nam, ex ea aperiam vel perferendis aliquid cum quae. Ut.</p>
+                <p>The Chamber of Commerce introduces comprehensive support programs to boost local businesses, including networking events, educational workshops, and access to vital resources.</p>
             </div>
         </div>
     </main>
@@ -122,6 +121,7 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/windchill.js"></script>
 </body>
 </html>

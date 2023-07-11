@@ -9,14 +9,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.ad {
-    padding: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background-color: var(--accent-1-color);
-}
-
 h3 {
     font-size: 1rem;
 }
@@ -26,6 +18,15 @@ body {
     min-height: 100vh;
     min-width: 500px;
     grid-template-rows: auto 1fr auto;
+}
+
+/* ---------- Header ---------- */
+.ad {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-1-color);
 }
 
 header {
@@ -221,7 +222,6 @@ img[data-src] {
     font-weight: bold;
 }
 
-
 /* ---------- Join Form ---------- */
 form {
     margin: 0 auto;
@@ -403,12 +403,14 @@ form label input:required:valid {
 }
 
 .read-button {
-    cursor: pointer;
+    margin: 0 auto;
+    background-color: var(--primary-color);
     color: white;
-    padding: 0.6rem;
-    background-color: var(--accent-2-color);
-    border-radius: 3rem;
-    margin: 0 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .call-to-action {
@@ -425,26 +427,22 @@ form label input:required:valid {
     height: 300px;
 }
 
-.bg * {
-    width: 100%;
-}
-
 .call-to-action h1 {
-    position: absolute;
-    top: 25%;
     color: white;
-    font-size: 2.2rem;
     text-shadow: 0.2rem 0.2rem 0.1rem black;
+    padding: 20px 0;
 }
 
 .join-button {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    color: white;
-    padding: 1.2rem;
+    margin: 0 auto;
     background-color: var(--primary-color);
-    border-radius: 3rem;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .spotlight {
@@ -477,10 +475,21 @@ form label input:required:valid {
     margin: auto;
 }
 
+/* ---------- Weather Widget ---------- */
 .weather {
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
+}
+
+#weather-icon {
+    width: 128px;
+    height: auto;
+}
+
+.source {
+    text-align: left;
+    font-size: 11px;
 }
 
 .weather-info {
@@ -525,6 +534,7 @@ form label input:required:valid {
     font-size: 1.15rem;
 }
 
+/* ---------- Footer ---------- */
 footer {
     background-color: var(--accent-1-color);
     color: white;
